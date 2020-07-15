@@ -3,7 +3,7 @@ node{
 	{
  		git 'https://github.com/nikitam1-org/myProjects.git'
 	}
-	stage('Compile-packge')
+	stage('Compile-package')
 	{
 		sh 'mvn package'
 	}
