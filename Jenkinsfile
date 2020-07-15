@@ -1,10 +1,19 @@
 node{
-	stage('SCM checkout')
+	stages
 	{
- 		git 'https://github.com/nikitam1-org/myProjects.git'
-	}
-	stage('Compile-package')
-	{
-		sh 'mvn package'
+		stage('build')
+		{
+			steps
+			{	
+ 				echo 'build stage'
+			}
+		}
+		stage('test')
+		{
+			steps
+			{
+				echo 'test stage'
+			}
+		}
 	}
 }
